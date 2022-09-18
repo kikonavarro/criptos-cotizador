@@ -41,6 +41,9 @@ const Heading = styled.h1`
 `
 
 function App() {
+
+  const [ monedas, setMonedas ] = useState({})
+
  
   return (
 
@@ -51,7 +54,7 @@ function App() {
           />
       <div>
         <Heading>hola</Heading>
-        <Formulario/>
+        <Formulario setMonedas={setMonedas}/>
       </div>
     </Contenedor>
   )
